@@ -4,6 +4,7 @@ namespace App\Sesi2\models;
 
 class Rocket
 {
+<<<<<<< Updated upstream
     private string $name;
     private string $engineStatus = 'inactive';
 
@@ -11,6 +12,12 @@ class Rocket
         $this->engineStatus = $engineStatus;
         $this->name = $name;
     }
+=======
+    public function __construct(
+        private string $name,
+        private string $engineStatus = 'inactive'
+    ) {}
+>>>>>>> Stashed changes
 
     public function getName(): string
     {
